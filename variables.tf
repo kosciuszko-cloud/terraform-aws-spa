@@ -11,6 +11,9 @@ variable "env" {
 variable "hz_name" {
 }
 
+variable "product_name" {
+}
+
 variable "vpc_azs" { 
     type = list(string)
 }

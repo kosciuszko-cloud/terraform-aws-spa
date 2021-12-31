@@ -49,7 +49,7 @@ resource "aws_s3_bucket_policy" "ui_bucket_policy" {
 }
 
 resource "aws_s3_bucket" "ui_logs_bucket" {
-  bucket        = "${var.env}-${product_name}-ui-logs-bucket"
+  bucket        = "${var.env}-${var.product_name}-ui-logs-bucket"
   force_destroy = true
 
   server_side_encryption_configuration {
